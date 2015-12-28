@@ -69,28 +69,28 @@ fn consume() {
     assert_eq!("/foo/bar/baz", path.curr());
     assert_eq!(false, path.is_root());
 
-	assert_eq!(false, path.consume("fo"));
+    assert_eq!(false, path.consume("fo"));
     assert_eq!("", path.prev());
     assert_eq!("/foo/bar/baz", path.curr());
     assert_eq!(false, path.is_root());
 
-	assert_eq!(true, path.consume("foo"));
+    assert_eq!(true, path.consume("foo"));
     assert_eq!("/foo", path.prev());
     assert_eq!("/bar/baz", path.curr());
     assert_eq!(false, path.is_root());
 
-	assert_eq!(false, path.consume("foo"));
+    assert_eq!(false, path.consume("foo"));
     assert_eq!("/foo", path.prev());
     assert_eq!("/bar/baz", path.curr());
     assert_eq!(false, path.is_root());
 
-	assert_eq!(true, path.consume("bar/baz"));
+    assert_eq!(true, path.consume("bar/baz"));
     assert_eq!("/foo/bar/baz", path.prev());
     assert_eq!("", path.curr());
     assert_eq!(true, path.is_root());
 
 
-	assert_eq!(false, path.consume("baz"));
+    assert_eq!(false, path.consume("baz"));
     assert_eq!("/foo/bar/baz", path.prev());
     assert_eq!("", path.curr());
     assert_eq!(true, path.is_root());
