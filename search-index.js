@@ -1,0 +1,3 @@
+var searchIndex = {};
+searchIndex['fresssack'] = {"items":[[0,"","fresssack","Eat through your path, one string at a time.",null,null],[3,"Fresssack","","",null,null],[11,"new","","",0,{"inputs":[{"name":"fresssack"},{"name":"string"}],"output":{"name":"fresssack"}}],[11,"curr","","",0,{"inputs":[{"name":"fresssack"}],"output":{"name":"str"}}],[11,"prev","","",0,{"inputs":[{"name":"fresssack"}],"output":{"name":"str"}}],[11,"is_root","","",0,{"inputs":[{"name":"fresssack"}],"output":{"name":"bool"}}],[11,"consume","","",0,{"inputs":[{"name":"fresssack"},{"name":"str"}],"output":{"name":"bool"}}]],"paths":[[3,"Fresssack"]]};
+initSearch(searchIndex);
